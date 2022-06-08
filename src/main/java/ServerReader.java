@@ -17,6 +17,7 @@ public class ServerReader implements Runnable{
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
 
             while (true) {
+
                 System.out.println(reader.readLine());
             }
 
